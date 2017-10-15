@@ -15,6 +15,7 @@ import {ImageService} from "./image.service";
 import {RouterModule} from "@angular/router";
 import {appRoutes} from "../routes";
 import { UploadComponent } from './upload/upload.component';
+import {UploadService} from "./upload.service";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { UploadComponent } from './upload/upload.component';
     AngularFireModule.initializeApp(environment.firebase),
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [ImageService],
+  providers: [ImageService, UploadService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

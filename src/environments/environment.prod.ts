@@ -5,7 +5,7 @@ export const environment = {
     authDomain: "imagegallery-378cd.firebaseapp.com",
     databaseURL: "https://imagegallery-378cd.firebaseio.com",
     projectId: "imagegallery-378cd",
-    storageBucket: "",
+    storageBucket: "imagegallery-378cd.appspot.com",
     messagingSenderId: "332462411321"
   }
 };
