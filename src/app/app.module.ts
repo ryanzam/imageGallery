@@ -16,6 +16,8 @@ import {RouterModule} from "@angular/router";
 import {appRoutes} from "../routes";
 import { UploadComponent } from './upload/upload.component';
 import {UploadService} from "./upload.service";
+import { SigninComponent } from './signin/signin.component';
+import {AuthenticationService} from "./authentication.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {UploadService} from "./upload.service";
     ImgGalleryComponent,
     ImgDetailsComponent,
     MenuBarComponent,
-    UploadComponent
+    UploadComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,7 @@ import {UploadService} from "./upload.service";
     AngularFireModule.initializeApp(environment.firebase),
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [ImageService, UploadService],
+  providers: [ImageService, UploadService, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
