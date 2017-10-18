@@ -18,6 +18,7 @@ import { UploadComponent } from './upload/upload.component';
 import {UploadService} from "./upload.service";
 import { SigninComponent } from './signin/signin.component';
 import {AuthenticationService} from "./authentication.service";
+import {AngularFireAuthModule} from "angularfire2/auth";
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {AuthenticationService} from "./authentication.service";
     FormsModule,
     HttpModule,
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
     RouterModule.forRoot(appRoutes),
   ],
