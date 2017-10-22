@@ -20,6 +20,10 @@ import {UploadService} from "./upload.service";
 import { SigninComponent } from './signin/signin.component';
 import {AuthenticationService} from "./authentication.service";
 import {AngularFireAuthModule} from "angularfire2/auth";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatProgressBarModule, MatButtonModule, MatInputModule, MatIconModule, MatToolbarModule, MatCardModule, MatMenuModule} from '@angular/material';
+
+
 
 @NgModule({
   declarations: [
@@ -31,6 +35,14 @@ import {AngularFireAuthModule} from "angularfire2/auth";
     SigninComponent
   ],
   imports: [
+    MatProgressBarModule,
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatCardModule,
+    BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     HttpModule,
