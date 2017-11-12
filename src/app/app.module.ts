@@ -22,6 +22,7 @@ import {AuthenticationService} from "./authentication.service";
 import {AngularFireAuthModule} from "angularfire2/auth";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatProgressBarModule, MatButtonModule, MatInputModule, MatIconModule, MatToolbarModule, MatCardModule, MatMenuModule} from '@angular/material';
+import {FlashMessagesModule} from "angular2-flash-messages";
 
 
 
@@ -35,6 +36,7 @@ import {MatProgressBarModule, MatButtonModule, MatInputModule, MatIconModule, Ma
     SigninComponent
   ],
   imports: [
+    FlashMessagesModule,
     MatProgressBarModule,
     MatButtonModule,
     MatInputModule,

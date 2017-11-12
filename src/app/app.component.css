@@ -2,3 +2,15 @@
   margin: auto;
   width: 80%;
 }
+
+.success {
+  width: 100%;
+  height: 50px;
+  background: #5fff09;
+}
+
+.warning {
+  width: 100%;
+  height: 50px;
+  background: #ff4200;
+}
