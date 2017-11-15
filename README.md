@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
-[Live DEMO] (https://imagegallery-378cd.firebaseapp.com)
+[Live DEMO](https://imagegallery-378cd.firebaseapp.com)
 
 ## Development server
 
